@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>新手必讀 - FE Heroes 中文資訊網</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+	<link href="css/carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/jquery-slim.min.js"></script>
+	<script src="js/global.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">FE Heroes 中文資訊網</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">新手必讀 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="">角色介紹</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">技能&聖印</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">技能承繼</a>
+              <a class="dropdown-item" href="#">技能介紹</a>
+              <a class="dropdown-item" href="#">聖印生成&覺醒</a>
+			   <a class="dropdown-item" href="#">聖印介紹</a>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <main role="main">
+		 <div class="container mainContent" >	
+			<div class="fixed-bottom" style="z-index:1;height:50px;" >
+			<a href="#basic" ><div class="btn-left btn-double active">
+				<span class="btn-text">基礎簡介</span>
+			</div></a>
+			<a href="#interface" ><div class="btn-right btn-double" >
+				<span class="btn-text ">遊戲界面&模式簡介</span>
+			</div></a>
+			</div>
+			<div id="introContainer" >
+				<h3 ><b>遊戲簡介</b></h3>
+				<p>Fire Emblem Heroes係 Intelligent Systems 開發，任天堂發行既戰棋遊戲，遊戲對應iOS和Android平台，於2017年2月2日發行。</p>
+			</div>
+
+			<div id="basicsContainer">
+				
+				<h3 id="basic"><b>基礎簡介</b></h3>
+				<p>FEH玩法同原作非法類近，遊戲保留原作常駐兵種以及武器相剋系統。</p>
+				<div id="basic1" class="subBlock">
+				<h4>兵種</h4>
+				<p><image src="images/moveType1.png"><span class="leftMargin-small">步行系 可行2格 可走入樹林,行1格</span></p>
+				<p><image src="images/moveType2.png"><span class="leftMargin-small">重裝系 可行1格 守備值較高</span></p>
+				<p><image src="images/moveType3.png"><span class="leftMargin-small">騎馬系 可行3格 入唔到樹林</span></p>
+				<p><image src="images/moveType4.png"><span class="leftMargin-small">飛行系 可行2格 會被弓剋制 可飛過樹林,山同河</span></p>
+				</div>
+				<div id="basic2" class="subBlock">
+				<h4>武器</h4>
+				<p><span class="redFont">紅屬 </span>(劍<image class="leftMargin-small" src="images/weaponBladeR.png">/魔法<image class="leftMargin-small" src="images/weaponMagicR.png">/魔法龍石<image class="leftMargin-small" src="images/weaponDragonR.png">)</p>
+				<p><span class="blueFont">藍屬 </span>(槍<image class="leftMargin-small" src="images/weaponLanceB.png">/魔法<image class="leftMargin-small" src="images/weaponMagicB.png">/魔法龍石<image class="leftMargin-small" src="images/weaponDragonB.png">)</p>
+				<p><span class="greenFont">綠屬 </span>(斧<image class="leftMargin-small" src="images/weaponAxeG.png">/魔法<image class="leftMargin-small" src="images/weaponMagicG.png">/魔法龍石<image class="leftMargin-small" src="images/weaponDragonG.png">)</p>
+				<p><span class="greyFont">無屬 </span>(弓<image class="leftMargin-small" src="images/weaponBowN.png">/杖<image class="leftMargin-small" src="images/weaponStaffN.png">/暗器<image class="leftMargin-small" src="images/weaponDaggerN.png">)</p>
+				</div>
+				<div id="basic3" class="subBlock">
+				<h4>武器相剋</h4>
+				<image style="max-width:100%;max-height:150px" src="images/weaponTriangle.png">
+				<p><span class="redFont">紅</span>><span class="greenFont">綠</span>><span class="blueFont">藍</span>><span class="redFont">紅</span> </p>
+				<p>攻擊有利方可提高1.2倍傷害，而被相剋方只可以造成0.8倍傷害</p>
+				</div>
+				<div id="basic4" class="subBlock">
+				<h4>特效武器</h4>
+				<p>特效攻擊可對被剋目標造成1.5倍傷害</p>
+				<p>例如</p>
+				<p>斬馬刀 - 馬特效</p>
+				<p>祕毒暗器 - 步兵特效</p>
+				<p>ファルシオン(Falchion)法爾西昂 - 龍特效</p>
+				</div>
+				<div id="basic5" class="subBlock">
+				<h4>角色個體值(性格) </h4>
+				<p>就算係相同既角色，都會有唔同既個體修正。雖然lv40時角色總數值會一致，但係角色有機會係體力，攻擊，速度，防禦，魔防5方面有+-偏差值。 </p>
+				<p>個體修正只有三個可能性: </p>
+				<p>1. 提升兩項能力， 減低兩項能力， 一項能力正常(有待查證) </p>
+				<p>2. 提升一項能力， 減低一項能力， 三項能力正常 </p>
+				<p>3. 全部能力都正常 </p>
+				<p>舉個栗子</p>
+				
+				<div class="characterTable">
+				  <div class="characterInfo">
+						<img src="images/Klein.png">
+						<br><span class="characterName">クレイン</span>
+						<br><span class="characterName">Klein</span>
+				  </div>
+				  <div class="characterStatTitle">
+					<div class="characterStatCell"></div>
+					<div class="characterStatCell">3星Lv 1</div>
+					<div class="characterStatCell">4星Lv 1</div>
+					<div class="characterStatCell">5星Lv 1</div>
+					<div class="characterStatCell">5星Lv 40(裸)</div>
+					<div class="characterStatCell">技能修正</div>
+					<div class="characterStatCell">性格修正</div>
+					<div class="characterStatCell">武器攻擊</div>
+				  </div>
+				  <div class="characterStat">
+					<div class="characterStatRow characterStatCell" >
+					<div >HP</div>
+					<div>Atk</div>
+					<div >Spd</div>
+					<div >Def</div>
+					<div >Res</div>
+					</div>
+					<div  class="characterStatRow characterStatCell" >
+					<div >/</div>
+					<div>/</div>
+					<div >/</div>
+					<div >/</div>
+					<div >/</div>
+					</div>
+					<div  class="characterStatRow characterStatCell" >
+					<div >17</div>
+					<div>13</div>
+					<div >2</div>
+					<div >4</div>
+					<div >4</div>
+					</div>
+					<div  class="characterStatRow characterStatCell">
+					<div >18</div>
+					<div>16</div>
+					<div >2</div>
+					<div >5</div>
+					<div >5</div>
+					</div>
+					<div  class="characterStatRow characterStatCell" >
+					<div >40</div>
+					<div>31</div>
+					<div >33</div>
+					<div >20</div>
+					<div >24</div>
+					</div>
+					<div  class="characterStatRow characterStatCell" >
+					<div >0</div>
+					<div>0</div>
+					<div >-5</div>
+					<div >0</div>
+					<div >0</div>
+					</div>
+					<div class="characterStatRow characterStatCell">
+					<div >+-3</div>
+					<div>+-3</div>
+					<div >+-3</div>
+					<div >+-3</div>
+					<div >+-3</div>
+					</div>
+					<div class="characterStatCell">7</div>
+				  </div>
+				</div>
+				<p>由於部份角色只能抽出4星/5星，所以係無3星數據。</p>
+				<p>假設抽中一隻5星クレイン，Lv1 時數值係 Hp 18 Atk 17 Spd 1 Def 5 Res 5，對應上邊個表可以知道呢隻就係加攻減速性格。咁佢Lv40 齊技數值會係 Hp 40 Atk 41 Spd 25 Def 20 Res 24，計算方法係將Lv40裸值 +- 技能修正，性格修正，同武器攻擊力。因為加攻性格所以攻擊力係 31 + 3 + 7 = 41 ，減速性格所以速度係33 - 5 -3 = 25。
+				</p>
+				
+				</div>
+			</div>
+			<div id="interfaceContianer">
+				<h3 id="interface"><b>遊戲界面&模式簡介</b></h3>
+			</div>
+		 </div>
+
+    </main>
+
+    <footer class="container">
+		<hr>
+		<p>&copy; fehHkg 2017</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+  </body>
+  
+
+</html>
+
+
