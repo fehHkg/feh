@@ -111,6 +111,15 @@
 {
 	height:30px;
 }
+.fullWidthImg
+{
+	max-width:100%
+}
+.smallIcon
+{
+	width:25px;
+	height:25x;
+}
 @media only screen and (max-width: 768px)
 {
 	.bannerContainer 
