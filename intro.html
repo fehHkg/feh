@@ -88,11 +88,13 @@
 				<h4>武器相剋</h4>
 				<image style="max-width:100%;max-height:150px" src="images/weaponTriangle.png">
 				<p><span class="redFont">紅</span>><span class="greenFont">綠</span>><span class="blueFont">藍</span>><span class="redFont">紅</span> </p>
-				<p>攻擊有利方可提高 1.2 倍傷害，而被相剋方只可以造成 0.8 倍傷害</p>
+				<p>攻擊有利方可提高 1.2 倍攻擊，而被相剋方會降低至 0.8 倍攻擊<br>
+				註：呢度講既攻擊係指角色攻擊力，而非實際造成既傷害，詳情可以參考之後傷害公式部份。
+				</p>
 				</div>
 				<div id="basic4" class="subBlock">
 				<h4>特效武器</h4>
-				<p>特效攻擊可對被剋目標造成 1.5 倍傷害</p>
+				<p>使用特效武器攻擊被剋目標可提升 1.5 倍攻擊力</p>
 				<p>例如</p>
 				<p>斬馬刀 - 馬特效</p>
 				<p>祕毒暗器 - 步兵特效</p>
@@ -184,7 +186,7 @@
 				<div id="basic6" class="subBlock">
 					<h4>戰鬥系統</h4>
 					<b>傷害公式</b>
-					<p>傷害 * 相剋加乘 * 特效攻擊 - 防禦/魔防 </p>
+					<p>攻擊 * 相剋加乘 * 特效攻擊 - 防禦/魔防 (點數截尾唔計)</p>
 					<p>eg.一隻 50 攻紅屬斬馬劍打一隻 20 物防綠屬騎兵，傷害 = 50 * 1.2 * 1.5 - 20 = 70	</p>
 					<b>追擊</b>
 					<p>在戰鬥中當某方角色既速度高過敵方速度5點即可發動追擊(打多敵人一次)</p>
